@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Asynchronous Programming\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "E:\\ConcurrencyInCSharp\\Asynchronous Programming\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "E:\\Asynchronous Programming\\WebApi\\WebApi.csproj",
+      "projectPath": "E:\\ConcurrencyInCSharp\\Asynchronous Programming\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\18128\\.nuget\\packages\\",
-      "outputPath": "E:\\Asynchronous Programming\\WebApi\\obj\\",
+      "outputPath": "E:\\ConcurrencyInCSharp\\Asynchronous Programming\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\18128\\AppData\\Roaming\\NuGet\\NuGet.Config",

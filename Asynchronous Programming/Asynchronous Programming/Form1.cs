@@ -19,7 +19,7 @@ namespace Asynchronous_Programming
         {
             InitializeComponent();
             apiURL = "https://localhost:5001/api";
-            cancellationTokenSource = new CancellationTokenSource();
+           // cancellationTokenSource = new CancellationTokenSource();
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -38,14 +38,17 @@ namespace Asynchronous_Programming
             // Cancellation_task
             //await new Cancelling_Tasks(pgReport, apiURL,this.cancellationTokenSource).btnStart_Click();
             // Cancellation loop
-            await new Cancelling_Loops(pgReport, apiURL, this.cancellationTokenSource).btnStart_Click();
-            
+            //await new Cancelling_Loops(pgReport, apiURL, this.cancellationTokenSource).btnStart_Click();
+            // Cancelation IAsyncEnumerable
+             cancellationTokenSource = new CancellationTokenSource(); 
+            await new Cancelling_Through_IAsyncEnumerable(cancellationTokenSource).btnStart_Click();
+            cancellationTokenSource = null;
             pictureLoading.Visible = false;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.cancellationTokenSource?.Cancel();
+            cancellationTokenSource?.Cancel();
         }
     }
 }
